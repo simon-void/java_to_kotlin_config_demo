@@ -1,0 +1,13 @@
+### IntelliJ IDEA ###
+.idea/*
+**/*.iml
+**/target/
+
+### NetBeans ###g
+**/nbproject/private/
+**/nbbuild/
+**/dist/
+
+### VS Code ###
+.vscode/
+**/out/
