@@ -50,12 +50,10 @@
                     <groupId>org.jetbrains.kotlin</groupId>
                     <artifactId>kotlin-maven-plugin</artifactId>
                     <version>${kotlin.version}</version>
+                    <extensions>true</extensions>
                     <executions>
                         <execution>
                             <id>compile</id>
-                            <goals>
-                                <goal>compile</goal>
-                            </goals>
                             <configuration>
                                 <sourceDirs>
                                     <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
@@ -65,9 +63,6 @@
                         </execution>
                         <execution>
                             <id>test-compile</id>
-                            <goals>
-                                <goal>test-compile</goal>
-                            </goals>
                             <configuration>
                                 <sourceDirs>
                                     <sourceDir>${project.basedir}/src/test/kotlin</sourceDir>
@@ -97,16 +92,12 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.11.0</version>
                     <executions>
-                        <!--
-                         Replacing default-compile as it is treated specially by maven
-                        -->
+                        <!-- Replacing default-compile as it is treated specially by maven -->
                         <execution>
                             <id>default-compile</id>
                             <phase>none</phase>
                         </execution>
-                        <!--
-                         Replacing default-testCompile as it is treated specially by maven
-                        -->
+                        <!-- Replacing default-compile as it is treated specially by maven -->
                         <execution>
                             <id>default-testCompile</id>
                             <phase>none</phase>
