@@ -9,8 +9,8 @@ then adapted to the needs of this project.
 
 This project exists in three versions/branches: **java_config**, **java_and_kotlin_config** and **kotlin_config** showcasing each step in the process of converting a Java project to Kotlin.
 
-### how to start the app
+### how to build and start the app
 
 ```shell
-./mvnw spring-boot:run -pl application
+./mvnw clean package && java -jar ./application/target/application-0.1.0.jar
 ```
