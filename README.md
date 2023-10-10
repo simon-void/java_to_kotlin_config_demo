@@ -12,5 +12,5 @@ This project exists in three versions/branches: **java_config**, **java_and_kotl
 ### how to start the app
 
 ```shell
-./mvnw clean package && java -jar ./application/target/application-0.1.0.jar
+./mvnw clean package && java -jar ./application/target/application-0.1.0-SNAPSHOT.jar
 ```
