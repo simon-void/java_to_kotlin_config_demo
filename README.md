@@ -14,3 +14,4 @@ This project exists in three versions/branches: **java_config**, **java_and_kotl
 ```shell
 ./mvnw clean package && java -jar ./application/target/application-0.1.0-SNAPSHOT.jar
 ```
+after having started to app, you can go to [http://localhost:8080/](http://localhost:8080/) to see a welcome message.
